@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="activities.MainActivity">
+
+    <include
+        android:id="@+id/include_activity_toolbar"
+        layout= "@layout/main_include_activity_actionbar" />
+    <include
+        android:id="@+id/content_main"
+        layout="@layout/content_main" />
+    <include layout="@layout/main_include_activity_bottom_bar_and_fab" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
